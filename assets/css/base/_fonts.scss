@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// Typography Imports
+// This file fetches external web fonts from Google Fonts.
+// -----------------------------------------------------------------------------
+
+/**
+ * Google Fonts Import
+ * * 1. Literata: Used for body text and UI elements.
+ * Weights: 400 (Regular), 500 (Medium), 700 (Bold)
+ * * 2. Noto Sans: Used for headings and featured titles.
+ * Weights: 400 through 900 (Variable) including Italics
+ */
+
+@import url('"https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Alfa Slab One:wght@500;700&family=Alfa+Slab+One&family=Abril+Fatface&family=Barlow:wght@400;500&family=Roboto+Condensed:wght@400;500&family=Source+Sans+3:wght@400;500&family=Barlow+Condensed:wght@400;500&display=swap"');
+

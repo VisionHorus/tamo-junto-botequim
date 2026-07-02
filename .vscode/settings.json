@@ -1,0 +1,9 @@
+{
+  "html.format.wrapLineLength": 120,
+  "css.format.lineWidth": 120,
+  "scss.format.lineWidth": 120,
+
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "editor.inlineSuggest.edits.showCollapsed": true
+}
