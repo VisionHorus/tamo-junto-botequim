@@ -14,7 +14,7 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 - <a href="https://techmahr.github.io/TamoJunto/home-image.html" target="_blank" rel="noopener">Home Image Page</a>
 - <a href="https://techmahr.github.io/TamoJunto/home-video.html" target="_blank" rel="noopener">Home Video Page</a>
 - <a href="https://techmahr.github.io/TamoJunto/about.html" target="_blank" rel="noopener">About Page</a>
-- <a href="https://techmahr.github.io/TamoJunto/menu-classic.html" target="_blank" rel="noopener">Menu Classic</a>
+- <a href="https://techmahr.github.io/TamoJunto/menu-saude.html" target="_blank" rel="noopener">Menu Classic</a>
 - <a href="https://techmahr.github.io/TamoJunto/menu-showcase.html" target="_blank" rel="noopener">Menu Showcase</a>
 - <a href="https://techmahr.github.io/TamoJunto/reservation.html" target="_blank" rel="noopener">Reservation</a>
 - <a href="https://techmahr.github.io/TamoJunto/blog.html" target="_blank" rel="noopener">Blog</a>
@@ -74,7 +74,7 @@ git clone https://github.com/techmahr/TamoJunto.git
 ## 📦 Screenshots 
 ![Home Page](assets/screenshots/home.png)
 ![About Page](assets/screenshots/about.png)
-![Menu Classic Page](assets/screenshots/menu-classic.png)
+![Menu Classic Page](assets/screenshots/menu-saude.png)
 ![Menu Showcase Page](assets/screenshots/menu-showcase.png)
 ![Our Chefs Page](assets/screenshots/our-chefs.png)
 ![Gallery Page](assets/screenshots/gallery.png)
