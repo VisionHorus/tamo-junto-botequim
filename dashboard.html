@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Painel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="bg-[#F6F5F4] min-h-screen flex">
+
+  <!-- SIDEBAR -->
+
+    <div id="sidebar"></div>
+
+  <!-- CONTEÚDO -->
+  <main class="flex-1 p-4 md:p-8">
+    <div class="max-w-5xl mx-auto space-y-6">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-[#2E2E2F]">Bem-vindo de volta</h2>
+        <p class="text-sm md:text-base text-[#6F6F72]">Use o menu ao lado para gerenciar o cardápio</p>
+      </div>
+
+      <a href="produtos.html" class="block bg-white border border-[#E4E2E0] rounded-lg shadow-sm p-6 hover:border-[#C47F4A] transition-colors max-w-sm">
+        <i class="fa-solid fa-utensils text-2xl text-[#C47F4A] mb-3"></i>
+        <h3 class="text-lg font-semibold text-[#2E2E2F]">Gerenciar Produtos</h3>
+        <p class="text-sm text-[#6F6F72]">Adicionar, editar ou remover itens do cardápio</p>
+      </a>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module">
+    
+    import { supabaseConfig } from ".assets/js/config.js";
+
+    const { data: { session } } = await supabaseConfig.auth.getSession();
+    if (!session) window.location.href = "login.html";
+
+    document.getElementById("logout-btn").addEventListener("click", async () => {
+      await supabaseConfig.auth.signOut();
+      window.location.href = "login.html";
+    });
+  </script>
+  <script type="module" src="./assets/js/sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Botequim</title>
+  <link rel="icon" href="./assets/images/favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="bg-[#F6F5F4] min-h-screen flex items-center justify-center p-4">
+
+  <div class="w-full max-w-sm">
+
+    <div class="text-center mb-6">
+    <a  class="navbar-brand" href="index.html">
+      <img style="width: 60px; margin: 0 auto;" class="nav-logo" src="./assets/images/logo.png" alt="TamoJunto Botequim" />
+    </a>
+      <h1 class="text-2xl font-bold text-[#2E2E2F]">Botequim</h1>
+      <p class="text-sm text-[#6F6F72]">Acesso para funcionários</p>
+    </div>
+
+    <div class="bg-white border border-[#E4E2E0] rounded-lg shadow-sm p-6 space-y-4">
+
+      <div class="grid gap-2">
+        <label for="email" class="text-sm text-[#6F6F72]">Email</label>
+        <div class="relative">
+          <i class="fa-solid fa-envelope absolute left-3 top-1/2 -translate-y-1/2 text-[#6F6F72] text-sm"></i>
+          <input
+            id="email"
+            type="email"
+            placeholder="seuemail@exemplo.com"
+            class="w-full border border-[#E4E2E0] rounded-md pl-9 pr-3 py-2 focus:border-[#C47F4A] focus:ring-1 focus:ring-[#C47F4A] outline-none"
+          />
+        </div>
+      </div>
+
+      <div class="grid gap-2">
+        <label for="password" class="text-sm text-[#6F6F72]">Senha</label>
+        <div class="relative">
+          <i class="fa-solid fa-lock absolute left-3 top-1/2 -translate-y-1/2 text-[#6F6F72] text-sm"></i>
+          <input
+            id="password"
+            type="password"
+            placeholder="Sua senha"
+            class="w-full border border-[#E4E2E0] rounded-md pl-9 pr-3 py-2 focus:border-[#C47F4A] focus:ring-1 focus:ring-[#C47F4A] outline-none"
+          />
+        </div>
+      </div>
+
+      <button
+        id="login"
+        type="button"
+        class="w-full bg-[#C47F4A] hover:bg-[#A46538] text-white rounded-md px-4 py-2 shadow-sm transition-colors flex items-center justify-center gap-2"
+      >
+        <i class="fa-solid fa-right-to-bracket"></i> Entrar
+      </button>
+
+    </div>
+
+    <p class="text-xs text-center text-[#6F6F72] mt-4">
+      Esqueceu a senha? Fale com o administrador do sistema.
+    </p>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="./assets/js/config.js"></script>
+  <script type="module" src="./assets/js/login.js"></script>
+</body>
+</html>

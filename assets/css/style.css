@@ -189,6 +189,7 @@ a {
 }
 .custom-navbar .navbar-toggler {
   border: none;
+  background-color: #1F2632;
 }
 .custom-navbar .navbar-toggler:focus {
   box-shadow: none;
@@ -234,7 +235,10 @@ a {
   background-color: transparent;
 }
 .custom-navbar.navbar-theme-dark.navbar-dark .nav-link {
-  color: #fff;
+  color: rgb(150, 150, 150)
+}
+.custom-navbar.navbar-theme-dark.navbar-dark .nav-link .nav-link:hover, .custom-navbar.navbar-theme-dark.navbar-dark .nav-link.active {
+  color: #C9A84C;
 }
 .custom-navbar.navbar-theme-dark.navbar-dark .navbar-toggler-icon {
   filter: brightness(1);
@@ -371,6 +375,23 @@ a {
   font-weight: 600;
   transition: all 0.3s ease;
 }
+
+.page-item .page-link:hover, .page-item .page-link:focus {
+  background-color: #A07830;
+  border-color: #A07830;
+  color: #fff;
+}
+.page-item.active .page-link {
+  background-color: #A07830;
+  border-color: #A07830;
+  color: #fff;
+}
+.page-item .page-link {
+  color: #C9A84C;
+  border-color: #fff5d6;
+  background-color: #fff3d3;
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #A07830 !important;
   border-color: #A07830 !important;
@@ -995,7 +1016,7 @@ a {
 .menu-item-one .title-wrap .price {
   font-weight: 700;
   color: #C9A84C;
-  font-size: 1.1rem;
+  font-size: 0.90rem;
 }
 .menu-item-one p {
   margin-top: 5px;
@@ -1465,3 +1486,36 @@ a {
 .contact-section ul .social-links a i {
   color: #1F2632;
 }/*# sourceMappingURL=style.css.map */
+
+.btn-horario-unidade {
+  background-color: transparent;
+  border: 1px solid #C9A84C;
+  color: #fff;
+}
+.btn-horario-unidade:hover,
+.btn-horario-unidade.btn-horario-ativo {
+  background-color: #C9A84C;
+  border-color: #C9A84C;
+  color: #fff;
+}
+
+.menu-categorias-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* scroll suave no iOS */
+  scroll-snap-type: x proximity;
+  padding-bottom: 4px; /* espaço pra scrollbar não cortar o botão */
+}
+
+.menu-categorias-scroll a {
+  scroll-snap-align: start;
+}
+
+/* esconde a barra de scroll mas mantém o gesto de arrastar */
+.menu-categorias-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.menu-categorias-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
