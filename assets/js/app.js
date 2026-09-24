@@ -17,7 +17,7 @@ const navbarHTML = /* html */`
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">Sobre nós</a></li>
-        <li class="nav-item"><a class="nav-link" href="menu-resgate.html">Cardapio</a></li>
+        <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardapio</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">Páginas</a>
@@ -138,10 +138,7 @@ const footerHTML = /* html */`
         <ul class="footer-links">
           <li><a href="index.html" class="btn-link">Home</a></li>
           <li><a href="about.html" class="btn-link">Sobre nós</a></li>
-          <li><a href="menu-saude.html" 
-          class="btn-link">Menu saude</a></li>
-          <li><a href="menu-vale.html" class="btn-link">Menu vale</a></li>
-          <li><a href="menu-resgate.html" class="btn-link">Menu Resgate</a></li>
+          <li><a href="cardapio.html" class="btn-link">Cardapio</a></li>
           <li><a href="gallery.html" class="btn-link">Galeria</a></li>
           <li><a href="contact.html" class="btn-link">Contato</a></li>
         </ul>

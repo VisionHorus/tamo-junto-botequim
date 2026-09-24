@@ -299,13 +299,13 @@ a {
 }
 .footer-one ul li a:hover {
   color: #C9A84C;
-}
+}/**
 .footer-one ul {
-  /**
+  
    * Timing List Variation
    * Specifically for "Opening Hours" with a dotted-bottom separator.
-   */
-}
+   
+}*/
 .footer-one ul.timing-list li {
   display: flex;
   justify-content: space-between;
@@ -1518,4 +1518,21 @@ a {
 .menu-categorias-scroll::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.btn-filtro-unidade.btn-filtro-ativo {
+    opacity: 0.55 !important;
+    background-color: #C9A84C !important;
+    color: #C9A84C !important;
+    border-color: #C9A84C !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.btn-filtro-unidade:focus,
+.btn-filtro-unidade:focus-visible {
+    background-color: transparent !important;
+    color: #C9A84C !important;
+    border-color: #C9A84C !important;
+    box-shadow: none !important;
+    outline: none !important;
 }

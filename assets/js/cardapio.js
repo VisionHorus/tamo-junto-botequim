@@ -378,8 +378,7 @@ const destacarBotaoAtivo = () => {
         const hrefBotao = botao.getAttribute("href")?.toLowerCase() || "";
 
         if (textoBotao === unidadeParam || hrefBotao.includes(`unidade=${unidadeParam}`)) {
-            botao.classList.remove("btn-outline-primary");
-            botao.classList.add("btn-primary");
+            botao.classList.add("btn-filtro-ativo");
         }
     });
 };
