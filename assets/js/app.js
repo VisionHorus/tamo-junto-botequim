@@ -170,10 +170,10 @@ const footerHTML = /* html */`
               target="_blank" rel="noopener" aria-label="Instagram – Unidade Resgate">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://maps.app.goo.gl/jZmrTWPa5NFziREx5" class="btn btn-outline-light btn-shine"
+            <a href="https://maps.app.goo.gl/rXupgx6jN3iC9ZGL8" class="btn btn-outline-light btn-shine"
               target="_blank" rel="noopener">
               <span>📍</span>
-              <span>Rua Andaraí, 723 – Resgate | SSA</span>
+              <span>R. Andaraí, 723 - Resgate, Salvador - BA, 41152-140</span>
               <span>↗</span>
             </a>
           </li>
@@ -183,10 +183,10 @@ const footerHTML = /* html */`
               target="_blank" rel="noopener" aria-label="Instagram – Unidade Saúde">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://maps.google.com/?q=Largo+da+Saude+02+Salvador+BA" class="btn btn-outline-light btn-shine"
+            <a href="https://maps.app.goo.gl/cxiXKFYdrZS4KJ8x6" class="btn btn-outline-light btn-shine"
               target="_blank" rel="noopener">
               <span>📍</span>
-              <span>Largo da Saúde, 02 – Saúde, Salvador – BA</span>
+              <span>Largo da Saúde, 02 - Saúde, Salvador - BA, 40040-620</span>
               <span>↗</span>
             </a>
           </li>
@@ -196,10 +196,10 @@ const footerHTML = /* html */`
               target="_blank" rel="noopener" aria-label="Instagram – Unidade Vale dos Lagos">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://maps.app.goo.gl/pYms8MLuKBDDiAWn6" class="btn btn-outline-light btn-shine"
+            <a href="https://maps.app.goo.gl/S8QuLwKTwrxsAQmV8" class="btn btn-outline-light btn-shine"
               target="_blank" rel="noopener">
               <span>📍</span>
-              <span>Cond. Mata Atlântica, 01 – Vale dos Lagos</span>
+              <span>R. Mata Atlântica I, 180 - São Marcos, Salvador - BA, 41260-145</span>
               <span>↗</span>
             </a>
           </li>

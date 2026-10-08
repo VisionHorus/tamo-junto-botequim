@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
@@ -49,7 +49,31 @@
         "name": "Quantas unidades o TamoJunto tem em Salvador?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Temos três unidades: Largo da Saúde (02), Rua Andaraí, 723 – Resgate, e Cond. Mata Atlântica, 01 – Vale dos Lagos."
+          "text": "HORARIOS_UNIDADES = {
+                resgate: {
+                    titulo: "Resgate",
+                    linhas: [
+                        { dia: "Segunda-feira", horario: "Fechado" },
+                        { dia: "Terça a Sábado", horario: "16:00 – 00:00" },
+                        { dia: "Domingo", horario: "11:00 – 22:00" },
+                    ],
+                },
+                saude: {
+                    titulo: "Saúde",
+                    linhas: [
+                        { dia: "Segunda-feira", horario: "Fechado" },
+                        { dia: "Terça a Domingo", horario: "17:00 – 00:00" },
+                    ],
+                },
+                vale: {
+                    titulo: "Vale dos Lagos",
+                    linhas: [
+                        { dia: "Terça-feira", horario: "Fechado" },
+                        { dia: "Segunda-feira", horario: "16:00 – 01:00" },
+                        { dia: "Quarta a Domingo", horario: "16:00 – 01:00" },
+                    ],
+                },
+            };"
         }
       },
       {
@@ -151,7 +175,7 @@
                         </h2>
                         <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Atualmente, temos três unidades em Salvador: <strong>Saúde</strong> (Largo da Saúde, nº 02), <strong>Resgate</strong> (Rua Andaraí, nº 14) e <strong>São Marcos</strong> (Rua Mata Atlântica).
+                                Atualmente, temos três unidades em Salvador: <strong>Saúde</strong> (Largo da Saúde, 02 - Saúde, Salvador - BA, 40040-620), <strong>Resgate</strong> (R. Andaraí, 723 - Resgate, Salvador - BA, 41152-140) e <strong>São Marcos</strong> (R. Mata Atlântica I, 180 - São Marcos, Salvador - BA, 41260-145).
                             </div>
                         </div>
                     </div>
