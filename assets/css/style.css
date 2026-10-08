@@ -637,7 +637,7 @@ a {
   }
 }
 .hero-section .hero-content-area .hero-caption h1 {
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
   line-height: 1.1;
   margin-bottom: 1.5rem;
 }
@@ -1535,4 +1535,208 @@ a {
     border-color: #C9A84C !important;
     box-shadow: none !important;
     outline: none !important;
+}
+
+/* Unidades em Salvador — estilos novos, escopados para não alterar o restante do site */
+#unidades {
+  background: linear-gradient(180deg, #f5f0e8 0%, #fbf8f2 100%);
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+
+#unidades .unidades-intro {
+  margin-bottom: 2.5rem !important;
+}
+
+#unidades .unidades-eyebrow {
+  margin: 0 auto 12px;
+  color: #a07830;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#unidades .head1 h2 {
+  margin-bottom: 14px !important;
+  color: #1f2632;
+  font-size: clamp(2rem, 3.1vw, 2.65rem);
+  line-height: 1.12;
+}
+
+#unidades .head1 p {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #52646b;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+#unidades .unit-card {
+  height: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  border: 1px solid #e7dfd1;
+  border-top: 3px solid #c9a84c;
+  border-radius: 16px;
+  background: #fffdfa !important;
+  box-shadow: 0 8px 24px rgba(31, 38, 50, 0.07);
+  transform: perspective(1000px) rotateX(var(--unit-tilt-x, 0deg)) rotateY(var(--unit-tilt-y, 0deg));
+  transform-style: preserve-3d;
+  transition: transform 260ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 260ms ease, border-color 260ms ease;
+}
+
+#unidades .unit-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 24px;
+}
+
+#unidades .unit-card .card-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: #1f2632;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+#unidades .unit-icon {
+  display: inline-flex;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f4ead3;
+  color: #a07830;
+}
+
+#unidades .unit-icon i {
+  color: inherit;
+  font-size: 1rem;
+}
+
+#unidades .unit-location-note {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #f4efe5;
+  color: #76684e;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 5px 9px;
+}
+
+#unidades .unit-card .card-text {
+  margin-bottom: 15px;
+  color: #485963 !important;
+  font-size: 0.96rem;
+  line-height: 1.62;
+}
+
+#unidades .unit-card .card-text strong {
+  color: #26343c;
+  font-weight: 700;
+}
+
+#unidades .unit-card .unit-hours {
+  border-radius: 10px;
+  background: #f7f3eb;
+  padding: 12px 14px;
+}
+
+#unidades .unit-card .card-text a:not(.btn) {
+  color: #9a7328;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(154, 115, 40, 0.35);
+  text-underline-offset: 3px;
+}
+
+#unidades .unit-actions {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+#unidades .unit-actions .btn {
+  border-radius: 9px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 9px 13px;
+}
+
+#unidades .unit-actions .btn:first-child {
+  border-color: #b38b37;
+  background: #b38b37;
+  color: #fff;
+}
+
+#unidades .unit-actions .btn:first-child:hover,
+#unidades .unit-actions .btn:first-child:focus-visible {
+  border-color: #916c25 !important;
+  background: #916c25 !important;
+  color: #fff !important;
+}
+
+#unidades .unit-actions .btn:last-child {
+  border-color: #d8cbb0;
+  background: transparent;
+  color: #46545b;
+}
+
+#unidades .unit-actions .btn:last-child:hover,
+#unidades .unit-actions .btn:last-child:focus-visible {
+  border-color: #b38b37 !important;
+  background: #f4ead3 !important;
+  color: #1f2632 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #unidades .unit-card:hover {
+    border-color: #d5bd84;
+    box-shadow: 0 18px 38px rgba(31, 38, 50, 0.15);
+    transform: perspective(1000px) rotateX(var(--unit-tilt-x, 0deg)) rotateY(var(--unit-tilt-y, 0deg)) translateY(-4px);
+  }
+}
+
+@media (max-width: 767px) {
+  #unidades {
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+
+  #unidades .unit-card .card-body {
+    padding: 23px 20px;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  #unidades .unit-card {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #unidades .unit-card {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+
+/* Aproxima o cardápio da seção recém-adicionada, sem alterar outras seções. */
+#unidades + #menu.our-menu {
+  padding-top: 48px;
+}
+
+@media (max-width: 767px) {
+  #unidades + #menu.our-menu {
+    padding-top: 32px;
+  }
 }
