@@ -32,7 +32,7 @@
  * * 2. Playfair Display: Used for headings and featured titles.
  * Weights: 400 through 900 (Variable) including Italics
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Alfa Slab One:wght@500;700&family=Alfa+Slab+One&family=Abril+Fatface&family=Barlow:wght@400;500&family=Roboto+Condensed:wght@400;500&family=Source+Sans+3:wght@400;500&family=Barlow+Condensed:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Alfa Slab One:wght@500;700&family=Alfa+Slab+One&family=Abril+Fatface&family=Barlow:wght@400;500&family=Open-sans+Condensed:wght@400;500&family=Source+Sans+3:wght@400;500&family=Barlow+Condensed:wght@400;500&display=swap");
 .hover-lift {
   transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
@@ -47,8 +47,42 @@
    Global resets, fonts, typography, helpers
    ========================================================================== */
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Open Sans", "Condensed", sans-serif;
   color: #1F2632;
+}
+
+/* Tamo Junto typography refactor */
+h1, h2 {
+  font-family: "Bebas Neue", "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  line-height: 0.90;
+  margin-bottom: 10px;
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-family: "Bebas Neue", "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  line-height: 0.90;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+
+h4, h5, h6{
+  font-family: "Open Sans", "Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.1;
+}
+
+p, .font-heading, .page-title{
+  font-family: "Open Sans", "Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.3;
 }
 
 .col-lg-3 {
@@ -68,11 +102,11 @@ a {
 }
 
 .text-dark-muted {
-  color: #527179 !important;
+  color: #1F2632 !important;
 }
 
 .font-heading {
-  font-family: "Alfa Slab One", serif;
+  font-family: "Bebas Neue", "Barlow Condensed", sans-serif;
   line-height: normal;
   font-weight: 700;
 }
@@ -83,7 +117,7 @@ a {
 
 .page-title {
   font-size: 40px;
-  font-family: "Playfair Display", serif;
+  font-family: "Bebas Neue", "Barlow Condensed", sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -95,7 +129,7 @@ a {
 }
 .head1 p {
   font-size: 18px;
-  color: #527179;
+  color: #1F2632;
 }
 
 .sub-title {
@@ -147,6 +181,10 @@ a {
   background-color: #f4f1ee ;
 }
 
+.bg-dark-brown {
+  background-color: #34251e ;
+}
+
 /* ==========================================================================
    3. LAYOUT
    Shared structural elements
@@ -156,7 +194,7 @@ a {
   width: calc(100% - 20px);
   max-width: 1200px;
   margin: 10px auto;
-  border-radius: 10px;
+  border-radius: 0px;
   padding-right: 25px;
 }
 .custom-navbar .nav-logo {
@@ -176,7 +214,7 @@ a {
 .custom-navbar .dropdown-menu {
   border: none;
   padding: 10px 0;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .custom-navbar .dropdown-menu .dropdown-item {
@@ -222,7 +260,7 @@ a {
     padding: 20px;
     margin-top: 15px;
 
-    border-radius: 10px;
+    border-radius: 0px;
   }
   .custom-navbar.navbar-theme-light .navbar-collapse .nav-link {
     color: #1F2632;
@@ -261,7 +299,7 @@ a {
     background-color: #1F2632;
     padding: 20px;
     margin-top: 15px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   .custom-navbar.navbar-theme-dark .navbar-collapse .nav-link {
     color: #fff;
@@ -351,7 +389,22 @@ a {
  * Standardizes border radius across all Bootstrap button types.
  */
 .btn {
-  border-radius: 4px;
+  border-radius: 0px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.btn-quadrado {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0; /* cantos retos */
 }
 
 /**
@@ -359,9 +412,10 @@ a {
  * Increases padding and adds a clean, uppercase aesthetic for prominent CTAs.
  */
 .btn-wide {
-  padding: 10px 25px;
+  padding: 11px 25px;
   text-transform: uppercase;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em;
 }
 
 /**
@@ -435,7 +489,6 @@ a {
   left: -60%;
   width: 15%;
   height: 200%;
-  background: rgba(255, 255, 255, 0.3);
   background: #e9af4b;
   transform: rotate(30deg);
   transition: all 0.5s ease;
@@ -465,7 +518,7 @@ a {
  */
 .form-control {
   margin-bottom: 32px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .form-control:focus, .form-control:hover {
   border-color: #C9A84C;
@@ -564,7 +617,7 @@ a {
   background-color: #C9A84C;
   opacity: 0.7;
   padding: 22px;
-  border-radius: 15%;
+  border-radius: 0%;
   background-size: 50%;
   transition: transform 0.3s ease;
 }
@@ -637,7 +690,7 @@ a {
   }
 }
 .hero-section .hero-content-area .hero-caption h1 {
-  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   line-height: 1.1;
   margin-bottom: 1.5rem;
 }
@@ -696,7 +749,7 @@ a {
   background-color: #C9A84C;
   opacity: 0.7;
   padding: 22px;
-  border-radius: 15%;
+  border-radius: 0%;
   background-size: 50%;
   transition: transform 0.3s ease;
 }
@@ -732,7 +785,7 @@ a {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 15px;
+  border-radius: 0px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   border: 4px solid white;
 }
@@ -747,6 +800,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
+  border-radius: 0px;
   z-index: 1;
 }
 .img-collage-wrap .second {
@@ -754,6 +808,7 @@ a {
   height: 300px;
   top: 15%;
   right: 0;
+  border-radius: 0px;
   z-index: 2;
 }
 .img-collage-wrap .third {
@@ -761,6 +816,8 @@ a {
   height: 200px;
   bottom: 18%;
   right: 20%;
+  border-radius: 0px;
+
   z-index: 3;
 }
 .img-collage-wrap {
@@ -790,32 +847,6 @@ a {
   }
 }
 
-/* ==========================================================================
-   Template Name: TamoJunto by Mahroof K
-   Version:       1.0.0
-   Licence:       MIT
-   Author:        Mahroof K
-   Description:   Premium Bootstrap 5 Restaurant Template
-   Contact        techmahr@gmail.com
-   --------------------------------------------------------------------------
-   Copyright © 2026 Mahroof. All rights reserved.
-   ========================================================================== */
-/* ==========================================================================
-   TEMPLATING INSTRUCTIONS
-   ==========================================================================
-   This file acts as the central hub for all project styles.
-   It uses the Sass @use rule to modularize components.
-
-   How to Customize:
-   1. Colors & Typography: Edit /abstract/_variables.scss
-   2. Global Tags:         Edit /base/_typography.scss
-   3. Individual UI:       Edit the respective file in /components/
-   4. Page Layouts:        Edit specific files in /pages/ for unique views.
-   ========================================================================== */
-/* ==========================================================================
-   1. ABSTRACTS
-   Variables, color tokens, mixins
-   ========================================================================== */
 /**
  * Universal Card Wrapper
  * Shared base styles for Blog, Team, and Testimonial cards.
@@ -826,7 +857,7 @@ a {
   padding: 15px;
   border: 0px;
   background: #f4f1ee !important;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 24px;
   /**
   * Card Image Wrapper
@@ -837,7 +868,7 @@ a {
 .card-team .card-img-wrapper,
 .card-testimonial .card-img-wrapper {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
@@ -896,7 +927,7 @@ a {
 .card-blog .card-text,
 .card-team .card-text,
 .card-testimonial .card-text {
-  color: #527179;
+  color: #1F2632;
 }
 .card-blog span,
 .card-team span,
@@ -965,12 +996,12 @@ a {
  */
 .card-blog-item {
   background-color: #f4f1ee !important;
-  border-radius: 15px;
+  border-radius: 0px;
   padding: 16px;
   margin-bottom: 24px;
 }
 .card-blog-item .date {
-  color: #527179;
+  color: #1F2632;
   font-size: 16px;
 }
 .card-blog-item .title {
@@ -990,14 +1021,14 @@ a {
  */
 .menu-item-one {
   margin-bottom: 25px;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed #527179;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed #1F2632;
   display: flex;
 }
 .menu-item-one img {
   height: 80px;
-  width: 80px;
-  border-radius: 15%;
+  min-width: 80px;
+  border-radius: 5%;
   margin-right: 20px;
 }
 .menu-item-one .content-wrap {
@@ -1010,19 +1041,20 @@ a {
 }
 .menu-item-one .title-wrap h5 {
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: bold;
   color: #1F2632;
 }
 .menu-item-one .title-wrap .price {
-  font-weight: 700;
+  font-weight: bold;
   color: #C9A84C;
-  font-size: 0.90rem;
+  font-size: 1.3rem;
 }
 .menu-item-one p {
-  margin-top: 5px;
   margin-bottom: 16px;
-  color: #527179;
-  font-size: 0.95rem;
+  color: #1f2632;
+  font-size: 1.1rem;
+  font-size: 1.3rem; 
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .menu-item-one:last-child {
@@ -1069,7 +1101,7 @@ a {
 }
 .accordion#faqAccordion .accordion-item {
   margin-bottom: 30px;
-  border-radius: 15px !important;
+  border-radius: 0px !important;
   border: 1px solid rgba(222, 226, 230, 0.2);
   overflow: hidden;
   background-color: #fff;
@@ -1092,7 +1124,7 @@ a {
   font-weight: 700;
   color: #1F2632;
   padding: 20px;
-  border-radius: 15px !important;
+  border-radius: 0px !important;
   font-size: 1.1rem;
   background-color: transparent;
 }
@@ -1115,9 +1147,9 @@ a {
 }
 .accordion#faqAccordion .accordion-body {
   padding: 0 20px 25px 20px;
-  color: #527179;
+  color: #1F2632;
   line-height: 1.6;
-  font-family: "Alfa Slab One", sans-serif;
+  font-family: "Bebas Neue", "Barlow Condensed", sans-serif;
   background-color: transparent;
 }
 
@@ -1154,7 +1186,7 @@ a {
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 0px;
   height: 250px;
   /**
    * Gallery Image Styling
@@ -1239,11 +1271,11 @@ a {
   height: 100%;
   min-height: 400px;
   overflow: hidden;
-  border-radius: 15px 0 0 15px;
+  border-radius: 0px 0 0 0px;
 }
 @media (max-width: 991px) {
   .book-a-table-split .book-table-img-wrap {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
   }
 }
 .book-a-table-split {
@@ -1269,11 +1301,11 @@ a {
   background-color: #C9A84C;
   padding: 50px;
   height: 100%;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 0px 0px 0;
 }
 @media (max-width: 991px) {
   .book-a-table-split .booking-form-wrap {
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 0px 0px;
     padding: 20px;
   }
 }
@@ -1421,7 +1453,7 @@ a {
 }
 .blog-details-wrap p,
 .blog-details-wrap li {
-  color: #527179;
+  color: #1F2632;
 }
 .blog-details-wrap i {
   margin-right: 8px;
@@ -1439,7 +1471,7 @@ a {
  */
 .terms-section p,
 .privacy-section p {
-  color: #527179;
+  color: #1F2632;
 }
 .terms-section hr,
 .privacy-section hr {
@@ -1539,7 +1571,7 @@ a {
 
 /* Unidades em Salvador — estilos novos, escopados para não alterar o restante do site */
 #unidades {
-  background: linear-gradient(180deg, #f5f0e8 0%, #fbf8f2 100%);
+  background: linear-gradient(180deg, #34251e 100%, #fbf8f2 100%);
   padding-top: 64px;
   padding-bottom: 48px;
 }
@@ -1557,11 +1589,21 @@ a {
   text-transform: uppercase;
 }
 
+.unidades-eyebrow {
+  margin: 0 auto 12px;
+  color: #a07830;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
 #unidades .head1 h2 {
   margin-bottom: 14px !important;
   color: #1f2632;
   font-size: clamp(2rem, 3.1vw, 2.65rem);
-  line-height: 1.12;
+  line-height: 1.1;
+  font-weight: bold;
 }
 
 #unidades .head1 p {
@@ -1665,7 +1707,7 @@ a {
 }
 
 #unidades .unit-actions .btn {
-  border-radius: 9px;
+  border-radius: 0;
   font-size: 0.88rem;
   font-weight: 600;
   padding: 9px 13px;

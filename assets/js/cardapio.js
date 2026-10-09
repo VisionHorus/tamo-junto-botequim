@@ -57,18 +57,18 @@ const montarCardProduto = (produto) => `
       <img src="${produto.imagem_url || "assets/images/placeholder.jpg"}" alt="${produto.nome}" />
       <div class="content-wrap">
         <div class="title-wrap">
-          <h5>${produto.nome}</h5>
-          <span class="price">R$ ${Number(produto.preco || 0).toFixed(2)}</span>
+          <p>${produto.nome}</p>
+          <p class="price">R$ ${Number(produto.preco || 0).toFixed(2)}</p>
         </div>
-        <p>${produto.descricao ?? ""}</p>
+        <p style="font-size: 0.90rem; font-weight: 200  ;">${produto.descricao ?? ""}</p>
       </div>
     </div>
   </div>
 `;
 
 const montarTituloCategoria = (nomeCategoria) => `
-  <div class="col-md-12" data-aos="fade-up">
-    <h2 class="font-heading mt-5 mb-3">${nomeCategoria}</h2>
+  <div class="col-md-12"data-aos="fade-up">
+    <h3 class="font-heading mt-5 mb-3">${nomeCategoria}</h3>
   </div>
 `;
 
