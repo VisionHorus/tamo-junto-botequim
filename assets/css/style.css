@@ -32,7 +32,8 @@
  * * 2. Playfair Display: Used for headings and featured titles.
  * Weights: 400 through 900 (Variable) including Italics
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Alfa Slab One:wght@500;700&family=Alfa+Slab+One&family=Abril+Fatface&family=Barlow:wght@400;500&family=Open-sans+Condensed:wght@400;500&family=Source+Sans+3:wght@400;500&family=Barlow+Condensed:wght@400;500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Alfa+Slab+One&family=Abril+Fatface&family=Barlow:wght@400;500&family=Barlow+Condensed:wght@400;500&family=Source+Sans+3:wght@400;500&display=swap');
 .hover-lift {
   transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
@@ -58,7 +59,7 @@ h1, h2 {
   letter-spacing: 0.025em;
   line-height: 0.90;
   margin-bottom: 10px;
-  font-size: 4.5rem;
+  font-size: clamp(50px, 5vw, 100px);
 }
 
 h3 {
@@ -680,7 +681,7 @@ a {
 }
 .hero-section .hero-content-area .hero-caption {
   text-align: center;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 2rem;
   width: 90%;
 }
@@ -1781,4 +1782,101 @@ a {
   #unidades + #menu.our-menu {
     padding-top: 32px;
   }
+}
+
+
+/* Estrutura do card */
+.menu-item-one {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Imagem do produto */
+.menu-item-one .produto-imagem {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Área dos textos */
+.menu-item-one .content-wrap {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 0;
+}
+
+/* Linha superior: nome à esquerda, preço à direita */
+.menu-item-one .title-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Nome: uma linha com reticências */
+.menu-item-one .produto-nome {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Preço: nunca quebra e fica no canto superior direito */
+.menu-item-one .price {
+    flex: 0 0 auto;
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Descrição abaixo do nome e do preço */
+.menu-item-one .produto-descricao {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+    overflow-wrap: anywhere;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+    .menu-item-one {
+        gap: 10px;
+    }
+
+    .menu-item-one .produto-imagem {
+        width: 64px;
+        height: 64px;
+        flex-basis: 64px;
+    }
+
+    .menu-item-one .title-wrap {
+        gap: 5px;
+    }
+
+    .menu-item-one .produto-nome {
+        font-size: 14px;
+    }
+
+    .menu-item-one .price {
+        font-size: 14px;
+    }
 }

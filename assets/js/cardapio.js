@@ -51,16 +51,30 @@ const gerarUrl = (paramsParaAlterar = {}) => {
 // FUNÇÕES DE MONTAGEM DE HTML (templates)
 // =====================================================
 
+
 const montarCardProduto = (produto) => `
-  <div class="col-md-6 col-ms-2" data-aos="fade-up">
+  <div class="col-12 col-md-6" data-aos="fade-up">
     <div class="menu-item-one">
-      <img src="${produto.imagem_url || "assets/images/placeholder.jpg"}" alt="${produto.nome}" />
+      <img
+        class="produto-imagem"
+        src="${produto.imagem_url || "assets/images/placeholder.jpg"}"
+        alt="${produto.nome || "Produto"}"
+      />
+
       <div class="content-wrap">
         <div class="title-wrap">
-          <p>${produto.nome}</p>
-          <p class="price">R$ ${Number(produto.preco || 0).toFixed(2)}</p>
+          <p class="produto-nome" title="${produto.nome || ""}">
+            ${produto.nome || ""}
+          </p>
+
+          <p class="price">
+            R$ ${Number(produto.preco || 0).toFixed(2)}
+          </p>
         </div>
-        <p style="font-size: 0.90rem; font-weight: 200  ;">${produto.descricao ?? ""}</p>
+
+        <p class="produto-descricao">
+          ${produto.descricao ?? ""}
+        </p>
       </div>
     </div>
   </div>
