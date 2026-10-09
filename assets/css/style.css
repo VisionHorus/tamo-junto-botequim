@@ -34,6 +34,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Alfa+Slab+One&family=Abril+Fatface&family=Barlow:wght@400;500&family=Barlow+Condensed:wght@400;500&family=Source+Sans+3:wght@400;500&display=swap');
+
 .hover-lift {
   transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
@@ -1048,7 +1049,7 @@ a {
 .menu-item-one .title-wrap .price {
   font-weight: bold;
   color: #C9A84C;
-  font-size: 1.3rem;
+  font-size: 0.90rem;
 }
 .menu-item-one p {
   margin-bottom: 16px;
